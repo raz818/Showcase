@@ -79,7 +79,6 @@ public class DisplayCaseTileEntityRenderer extends TileEntityRenderer<DisplayCas
             matrixStackIn.translate(0d, 0.35d, 0d);
             //matrixStackIn.rotate(dir.getRotation());
             matrixStackIn.scale(0.75f, 0.75f, 0.75f);
-            mc.getBlockRendererDispatcher().renderBlock(Blocks.OAK_PRESSURE_PLATE.getDefaultState(),matrixStackIn,bufferIn,combinedLightIn,combinedOverlayIn, EmptyModelData.INSTANCE);
             matrixStackIn.pop();
             renderItem(tileEntityIn.getDisplayItem(), new double[] {0.5d, 0.5d, 0.5d}, Vector3f.YP.rotationDegrees(-dir.getHorizontalAngle()+180f), matrixStackIn, bufferIn, partialTicks, combinedOverlayIn, lightLevel, 0.75f);
 
